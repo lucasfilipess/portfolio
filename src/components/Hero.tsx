@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
             <div className="lg:py-24">
               <a
-                href="https://github.com/"
+                href="https://github.com/lucasfilipess"
                 target="_blank"
                 className="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
                 rel="noreferrer"

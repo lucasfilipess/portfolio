@@ -98,6 +98,7 @@ const Work = ({ portfolio }: Props) => {
                       height={768}
                       quality={100}
                       src={coverImage}
+                      objectFit="cover"
                       alt="Cover image from project developed by Lucas Filipe"
                     />
                   </div>
@@ -172,6 +173,7 @@ const Work = ({ portfolio }: Props) => {
                       height={768}
                       quality={100}
                       src={coverImage}
+                      objectFit="cover"
                       alt="Cover image from project developed by Lucas Filipe"
                     />
                   </div>
