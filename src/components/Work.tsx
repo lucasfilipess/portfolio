@@ -92,10 +92,10 @@ const Work = ({ portfolio }: Props) => {
                   )}
                 </div>
                 <div className="px-4 mt-12 sm:mt-16 lg:relative lg:mt-0">
-                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-right-48 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-right-48 lg:absolute lg:left-0 lg:w-auto lg:max-w-none">
                     <Image
-                      width={1024}
-                      height={768}
+                      width={1440}
+                      height={900}
                       quality={100}
                       src={coverImage}
                       objectFit="cover"
@@ -167,10 +167,10 @@ const Work = ({ portfolio }: Props) => {
                   </div>
                 </div>
                 <div className="mt-12 px-4 sm:mt-16 lg:relative lg:mt-0 lg:col-start-1">
-                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-left-48 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none">
+                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-left-48 lg:absolute lg:right-0 lg:w-auto lg:max-w-none">
                     <Image
-                      width={1024}
-                      height={768}
+                      width={1440}
+                      height={900}
                       quality={100}
                       src={coverImage}
                       objectFit="cover"

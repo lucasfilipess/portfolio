@@ -23,14 +23,15 @@ const Lecode = ({ metrics }: Props) => {
     <div className="relative bg-gray-900">
       <div className="h-80 absolute inset-x-0 bottom-0 xl:top-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
-          <div className="h-full xl:relative xl:col-start-2 overflow-hidden">
+          <div className="flex items-center h-full xl:relative xl:col-start-2 overflow-hidden">
             <Image
               className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
               src="/img/team.png"
               alt="People working on laptops"
               width={712}
-              height={692}
+              height={712}
               quality={100}
+              objectFit="cover"
             />
             <div
               aria-hidden="true"
