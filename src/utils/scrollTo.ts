@@ -2,7 +2,8 @@ import { RefObject } from 'react'
 import animateScroll from './animateScroll'
 
 export type ScrollToProps = {
-  ref: RefObject<HTMLDivElement> | null
+  id?: string
+  ref?: RefObject<HTMLElement> | null
   duration?: number
 }
 
@@ -13,9 +14,14 @@ const logError = () =>
 
 const getElementPosition = (element: HTMLElement) => element.offsetTop
 
-export const scrollTo = ({ ref = null, duration = 1500 }: ScrollToProps) => {
+export const scrollTo = ({
+  id = '',
+  ref = null,
+  duration = 1500
+}: ScrollToProps) => {
+  const byIdElement = document.getElementById(id)
   const initialPosition = window.scrollY
-  const element = ref ? ref?.current : null
+  const element = byIdElement ? byIdElement : ref ? ref?.current : null
 
   if (!element) {
     logError()

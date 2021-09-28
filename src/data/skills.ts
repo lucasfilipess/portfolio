@@ -4,62 +4,61 @@ import {
   SiNextDotJs,
   SiStyledComponents
 } from 'react-icons/si'
+import { useRouter } from 'next/router'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3, DiDatabase } from 'react-icons/di'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { Props as SkillProps } from 'components/Skill'
+import { LOCALE } from '../../locale'
 
-export const SKILLS: SkillProps[] = [
-  {
-    name: 'HTML5',
-    description:
-      'HTML5 is a markup language for the World Wide Web and is key Internet technology.',
-    icon: AiFillHtml5
-  },
-  {
-    name: 'CSS3',
-    description:
-      'CSS3 is the third version of Cascading Style Sheets, which defines styles for a web project.',
-    icon: DiCss3
-  },
-  {
-    name: 'JavaScript',
-    description:
-      'JavaScript is a structured, high-level scripting interpreted programming language with weak dynamic typing and multiparadigm. ',
-    icon: SiJavascript
-  },
-  {
-    name: 'TypeScript',
-    description:
-      'TypeScript is a strict syntactic superset of JavaScript and adds optional static typing to the language.',
-    icon: SiTypescript
-  },
-  {
-    name: 'ReactJS',
-    description:
-      'ReactJS is an open source JavaScript library focused on creating user interfaces on web pages.',
-    icon: FaReact
-  },
-  {
-    name: 'NextJS',
-    description:
-      'NextJS is an open-source React front-end development web framework that enables server-side rendering and static website generation for web applications.',
-    icon: SiNextDotJs
-  },
-  {
-    name: 'Styled-Components',
-    description:
-      'Utilizing tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allow you to write actual CSS code to style your components.',
-    icon: SiStyledComponents
-  },
-  {
-    name: 'NodeJS',
-    description: `NodeJs is open-source, cross-platform software based on ${"Google's"} V8 interpreter that allows JavaScript code to run outside of a web browser.`,
-    icon: FaNodeJs
-  },
-  {
-    name: 'Database',
-    description: 'SQL and No-SQL databases',
-    icon: DiDatabase
-  }
-]
+export const SKILLS = (): SkillProps[] => {
+  const { locale } = useRouter()
+  const { skills } = LOCALE[locale === 'en-US' ? 'en-US' : 'pt-BR']
+  return [
+    {
+      name: skills[0].name,
+      description: skills[0].description,
+      icon: AiFillHtml5
+    },
+    {
+      name: skills[1].name,
+      description: skills[1].description,
+      icon: DiCss3
+    },
+    {
+      name: skills[2].name,
+      description: skills[2].description,
+      icon: SiJavascript
+    },
+    {
+      name: skills[3].name,
+      description: skills[3].description,
+      icon: SiTypescript
+    },
+    {
+      name: skills[4].name,
+      description: skills[4].description,
+      icon: FaReact
+    },
+    {
+      name: skills[5].name,
+      description: skills[5].description,
+      icon: SiNextDotJs
+    },
+    {
+      name: skills[6].name,
+      description: skills[6].description,
+      icon: SiStyledComponents
+    },
+    {
+      name: skills[7].name,
+      description: skills[7].description,
+      icon: FaNodeJs
+    },
+    {
+      name: skills[8].name,
+      description: skills[8].description,
+      icon: DiDatabase
+    }
+  ]
+}

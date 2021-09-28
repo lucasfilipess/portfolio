@@ -1,6 +1,8 @@
 import React, { ElementType } from 'react'
-// import Image from 'next/image'
+import { useRouter } from 'next/router'
+import Image from 'next/image'
 import { UserCircleIcon } from '@heroicons/react/outline'
+import { LOCALE } from '../../locale'
 
 export type ClientProps = {
   name: string
@@ -21,6 +23,9 @@ export type Props = {
 }
 
 const Work = ({ portfolio }: Props) => {
+  const { locale } = useRouter()
+  const { landing } = LOCALE[locale === 'en-US' ? 'en-US' : 'pt-BR']
+
   return (
     <>
       {portfolio.map(
@@ -53,7 +58,7 @@ const Work = ({ portfolio }: Props) => {
                             className="inline-flex bg-gradient-to-r from-teal-500 to-cyan-600 bg-origin-border px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-teal-600 hover:to-cyan-700"
                             rel="noreferrer"
                           >
-                            View project
+                            {landing.viewButton}
                           </a>
                         </div>
                       )}
@@ -86,14 +91,12 @@ const Work = ({ portfolio }: Props) => {
                     </div>
                   )}
                 </div>
-                <div className="mt-12 sm:mt-16 lg:mt-0">
-                  <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    {/* FIXME: switch img tag to next/image  */}
-                    <img
-                      // width={1024}
-                      // height={768}
-                      // quality={100}
-                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                <div className="px-4 mt-12 sm:mt-16 lg:relative lg:mt-0">
+                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-right-48 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none">
+                    <Image
+                      width={1024}
+                      height={768}
+                      quality={100}
                       src={coverImage}
                       alt="Cover image from project developed by Lucas Filipe"
                     />
@@ -162,14 +165,12 @@ const Work = ({ portfolio }: Props) => {
                     )}
                   </div>
                 </div>
-                <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-                  <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    {/* FIXME: switch img tag to next/image  */}
-                    <img
-                      // width={1024}
-                      // height={768}
-                      // quality={100}
-                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                <div className="mt-12 px-4 sm:mt-16 lg:relative lg:mt-0 lg:col-start-1">
+                  <div className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:-left-48 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none">
+                    <Image
+                      width={1024}
+                      height={768}
+                      quality={100}
                       src={coverImage}
                       alt="Cover image from project developed by Lucas Filipe"
                     />

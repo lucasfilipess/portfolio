@@ -2,5 +2,16 @@
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "cSpell.words": [
+    "bentcare",
+    "datetime",
+    "ethicsnet",
+    "headlessui",
+    "heroicons",
+    "Lecode",
+    "Linkedin",
+    "semibold",
+    "Upwork"
+  ]
 }

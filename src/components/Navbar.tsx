@@ -2,6 +2,7 @@ import { Fragment, RefObject, useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import LocaleSwitcher from 'components/LocaleSwitcher'
 import { scrollTo } from 'utils'
 
 export type NavigationProps = {
@@ -15,28 +16,35 @@ export type Props = {
 }
 
 const Navbar = ({ navigation }: Props) => {
-  const [fixed, setFixed] = useState(false)
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setFixed(window.scrollY > 35)
+    const controlNavbar = () => {
+      if (window.scrollY > 100) {
+        setShow(true)
+      } else {
+        setShow(false)
+      }
     }
-    handleScroll()
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', controlNavbar)
+    return () => window.removeEventListener('scroll', controlNavbar)
   }, [])
 
   return (
     <>
       <Popover as="header" className="relative">
-        <div className="bg-gray-900 pt-6 w-full transition duration-700 ease-in-out md:fixed md:z-10 lg:fixed lg:z-10">
+        <div
+          className={`w-full bg-gray-900 transition duration-500 ease-in-out py-3 md:z-20 lg:z-20 md:fixed lg:fixed 
+            ${show && 'md:bg-white md:shadow lg:bg-white lg:shadow'}
+          `}
+        >
           <nav
             className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
             aria-label="Global"
           >
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <button onClick={() => scrollTo({ id: 'hero' })}>
                   <span className="sr-only">Lucas Filipe</span>
                   <Image
                     className="h-8 w-auto sm:h-10"
@@ -46,7 +54,7 @@ const Navbar = ({ navigation }: Props) => {
                     src="/img/logo.png"
                     alt="Logo"
                   />
-                </a>
+                </button>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -55,15 +63,24 @@ const Navbar = ({ navigation }: Props) => {
                 </div>
               </div>
               <div className="hidden space-x-8 md:flex md:ml-10">
-                {navigation.map(({ ref, name, duration }) => (
+                {navigation.map(({ ref, name, duration }, index) => (
                   <button
-                    key={`${name}-menu`}
-                    className="text-base font-medium text-white hover:text-gray-300"
+                    key={`menu-${index}`}
+                    className={`text-base font-medium transition duration-500
+                      ${
+                        show
+                          ? 'text-gray-900 hover:bg-gray-50'
+                          : 'text-white hover:text-gray-300'
+                      }
+                    `}
                     onClick={() => scrollTo({ ref, duration })}
                   >
                     {name}
                   </button>
                 ))}
+              </div>
+              <div className="ml-auto hidden md:block">
+                <LocaleSwitcher dark={show} />
               </div>
             </div>
           </nav>
@@ -111,6 +128,9 @@ const Navbar = ({ navigation }: Props) => {
                       {name}
                     </button>
                   ))}
+                  <div className="flex w-full items-center justify-center mt-5">
+                    <LocaleSwitcher dark />
+                  </div>
                 </div>
               </div>
             </div>

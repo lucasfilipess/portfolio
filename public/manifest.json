@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "rgba(11,153,175,1)",
-  "description": "Dashboard",
+  "background_color": "#0891B2)",
+  "description": "A simple portfolio for my projects.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "rgba(11,153,175,1)"
+  "theme_color": "#0891B2)"
 }
