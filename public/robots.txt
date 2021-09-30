@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lucasfilipess.tech/
+
+# Sitemaps
+Sitemap: https://www.lucasfilipess.tech/sitemap.xml

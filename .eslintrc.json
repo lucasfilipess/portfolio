@@ -27,7 +27,12 @@
         "react-hooks",
         "@typescript-eslint"
     ],
-    "ignorePatterns": ["tailwind.config.js", "postcss.config.js","next.config.js"],
+    "ignorePatterns": [
+      "tailwind.config.js",
+      "postcss.config.js",
+      "next.config.js",
+      "next-sitemap.js"
+    ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
