@@ -155,7 +155,7 @@ const Landing: NextPage = () => {
                 <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                   <div className="flex justify-center items-center w-full">
                     <h2 className="text-2xl font-semibold tracking-wider text-cyan-600 uppercase">
-                      Testimonials
+                      {landing.testimonials}
                     </h2>
                     <AiOutlineComment
                       className="h-6 w-6 text-cyan-600 ml-1"
@@ -163,7 +163,7 @@ const Landing: NextPage = () => {
                     />
                   </div>
                   <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                    Testimonials from clients {"I've"} worked for
+                    {landing.testimonialsDescription}
                   </p>
                 </div>
                 <div className="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">

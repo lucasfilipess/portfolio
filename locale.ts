@@ -20,7 +20,9 @@ export const LOCALE = {
       worksDescription: `Projects I've had the pleasure of participating in`,
       viewButton: 'View project',
       skills: 'Skill',
-      skillsDescription: 'Technologies I have experience'
+      skillsDescription: 'Technologies I have experience',
+      testimonials: 'Testimonials',
+      testimonialsDescription: `Testimonials from clients I've worked for`
     },
     portfolio: [
       {
@@ -180,7 +182,9 @@ export const LOCALE = {
         'Alguns dos projetos que ja tive o prazer de participar.',
       viewButton: 'Visitar projeto',
       skills: 'Habilidades',
-      skillsDescription: 'Tecnologias que possuo experiência'
+      skillsDescription: 'Tecnologias que possuo experiência',
+      testimonials: 'Testemunhos',
+      testimonialsDescription: 'Testemunhos de clientes que já trabalhei'
     },
     portfolio: [
       {
