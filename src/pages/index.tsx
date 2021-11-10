@@ -77,7 +77,7 @@ const Landing: NextPage = () => {
           description: landing.seoDescription,
           images: [
             {
-              url: 'https://lucasfilipess.tech/img/lucas.jpeg',
+              url: 'https://lucasfilipess.tech/img/cover.jpeg',
               width: 1280,
               height: 720,
               alt: 'Lucas Filipe'
