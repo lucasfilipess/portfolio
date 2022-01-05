@@ -40,7 +40,7 @@ const LocaleSwitcher = ({ dark = false }: Props) => {
                   }`}
                 >
                   {locale === 'en-US'
-                    ? 'Inglês'
+                    ? 'English'
                     : locale === 'pt-BR'
                     ? 'Português'
                     : ''}
