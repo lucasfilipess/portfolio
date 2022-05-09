@@ -17,9 +17,8 @@ import Work from 'components/Work'
 import Skill from 'components/Skill'
 import About from 'components/About'
 import Testimonial from 'components/Testimonial'
-import Lecode from 'components/Lecode'
 import Footer from 'components/Footer'
-import { PORTFOLIO, SKILLS, TESTIMONIALS, METRICS } from 'data'
+import { PORTFOLIO, SKILLS, TESTIMONIALS } from 'data'
 import { LOCALE } from '../../locale'
 
 const Landing: NextPage = () => {
@@ -29,14 +28,12 @@ const Landing: NextPage = () => {
   const skillsRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
   const testimonialsRef = useRef<HTMLDivElement>(null)
-  const lecodeRef = useRef<HTMLDivElement>(null)
 
   const navigation = [
     { name: navbar.work, ref: worksRef },
     { name: navbar.skills, ref: skillsRef },
     { name: navbar.about, ref: aboutRef },
-    { name: navbar.testimonials, ref: testimonialsRef },
-    { name: 'Lecode', ref: lecodeRef }
+    { name: navbar.testimonials, ref: testimonialsRef }
   ]
 
   const navbarNavigation: NavigationProps[] = navigation
@@ -166,7 +163,7 @@ const Landing: NextPage = () => {
                     {landing.testimonialsDescription}
                   </p>
                 </div>
-                <div className="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
+                <div className="mt-12 pb-10 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
                   {TESTIMONIALS().map(
                     (
                       { project, title, comment, name, date, datetime },
@@ -185,9 +182,6 @@ const Landing: NextPage = () => {
                   )}
                 </div>
               </div>
-            </div>
-            <div className="pt-16" ref={lecodeRef}>
-              <Lecode metrics={METRICS()} />
             </div>
           </main>
           <Footer navigation={footerNavigation} />

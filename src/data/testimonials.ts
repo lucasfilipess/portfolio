@@ -45,6 +45,14 @@ export const TESTIMONIALS = (): TestimonialProps[] => {
       name: 'John Havenar',
       date: testimonials[4].date,
       datetime: '2020-11-22'
+    },
+    {
+      project: testimonials[5].project,
+      title: testimonials[5].title,
+      comment: testimonials[5].comment,
+      name: 'Chris Degierer',
+      date: testimonials[5].date,
+      datetime: '2021-10-17'
     }
   ]
 }

@@ -10,8 +10,7 @@ export const LOCALE = {
       github: 'Visit my public repositories',
       office: 'Full Stack Developer',
       description1: 'I currently work at',
-      description2: 'and at my company',
-      description3: 'building all kinds of applications with JavaScript.',
+      description2: 'building mobile and web applications with JavaScript.',
       contact: 'Contact me'
     },
     landing: {
@@ -67,9 +66,9 @@ export const LOCALE = {
           'TypeScript is a strict syntactic superset of JavaScript and adds optional static typing to the language.'
       },
       {
-        name: 'ReactJS',
+        name: 'ReactJS / React Native',
         description:
-          'ReactJS is an open source JavaScript library focused on creating user interfaces on web pages.'
+          'React is an open source JavaScript library focused on creating user interfaces.'
       },
       {
         name: 'NextJS',
@@ -129,33 +128,12 @@ export const LOCALE = {
         comment:
           'Attentive to scope. Asked relevant questions. Provided code sooner than promised. Provided Satisfaction as guaranteed. Very pleased so far!',
         date: 'Nov 22, 2020'
-      }
-    ],
-    lecode: {
-      title: 'We love what we do',
-      subtitle:
-        'We are a software development team specialized in building modern, exceptional, high-quality websites and applications.'
-    },
-    metrics: [
-      {
-        stat: '24+',
-        emphasis: 'Jobs',
-        rest: 'complete with 100% success.'
       },
       {
-        stat: '8+',
-        emphasis: 'High-level full stack',
-        rest: 'employees specialized in web development.'
-      },
-      {
-        stat: '100%',
-        emphasis: 'Job Success and TOP RATED',
-        rest: 'on Upwork.'
-      },
-      {
-        stat: '971+',
-        emphasis: 'Hours',
-        rest: 'of work on completed projects on Upwork.'
+        project: 'Music Application',
+        title: 'Front-end Development',
+        comment: `Great experience with Lucas. This was an unusual project and it ${"wasn't"} likely anyone would have prior digital audio experience or know the JavaScript toolkit I wanted to use. Lucas ramped up quickly and delivered on the full feature set. Great communications and everything was on schedule. Highly recommended.`,
+        date: 'Oct 17, 2021'
       }
     ],
     footer: '2021 Lucas Filipe. All rights reserved.'
@@ -171,8 +149,7 @@ export const LOCALE = {
       github: 'Visite meus repositórios públicos',
       office: 'Programador Full Stack',
       description1: 'Atualmente trabalho na',
-      description2: 'e na minha empresa',
-      description3: 'desenvolvendo todo tipo de software com JavaScript.',
+      description2: 'desenvolvendo aplicações mobile e web com JavaScript.',
       contact: 'Fale comigo'
     },
     landing: {
@@ -229,9 +206,9 @@ export const LOCALE = {
           'TypeScript é um superset sintático do JavaScript e adiciona tipagem estática opcional à linguagem.'
       },
       {
-        name: 'ReactJS',
+        name: 'ReactJS / React Native',
         description:
-          'ReactJS é uma biblioteca JavaScript de código aberto focada na criação de interfaces de usuário em páginas da web.'
+          'React é uma biblioteca JavaScript de código aberto focada na criação de interfaces de usuário.'
       },
       {
         name: 'NextJS',
@@ -292,33 +269,12 @@ export const LOCALE = {
         comment:
           'Atento ao escopo. Fez perguntas relevantes. Código fornecido antes do prometido. Satisfação fornecida como garantida. Muito satisfeito até agora!',
         date: 'Nov 22, 2020'
-      }
-    ],
-    lecode: {
-      title: 'Amamos o que fazemos',
-      subtitle:
-        'Somos uma equipe de desenvolvimento de software especializada na construção de sites e aplicativos modernos, excepcionais e de alta qualidade.'
-    },
-    metrics: [
-      {
-        stat: '24+',
-        emphasis: 'Trabalhos',
-        rest: 'completos com 100% de sucesso.'
       },
       {
-        stat: '8+',
-        emphasis: 'Programadores de alto nível',
-        rest: 'especializados em desenvolvimento web.'
-      },
-      {
-        stat: '100%',
-        emphasis: 'Sucesso no trabalho e MAIS AVALIADOS',
-        rest: 'no Upwork.'
-      },
-      {
-        stat: '971+',
-        emphasis: 'Horas',
-        rest: 'de trabalho em projetos concluídos no Upwork.'
+        project: 'Music Application',
+        title: 'Desenvolvimento Front-end',
+        comment: `Ótima experiência com Lucas. Este foi um projeto incomum e não era provável que alguém tivesse experiência anterior em áudio digital ou conhecesse o kit de ferramentas JavaScript que eu queria usar. Lucas progrediu rapidamente e entregou o conjunto completo de recursos. Ótimas comunicações e tudo estava dentro do cronograma. Altamente recomendado.`,
+        date: 'Out 17, 2021'
       }
     ],
     footer: '2021 Lucas Filipe. Todos os direitos reservados.'

@@ -27,7 +27,7 @@ const Footer = ({ navigation }: Props) => {
   const { locale } = useRouter()
   const { footer } = LOCALE[locale === 'en-US' ? 'en-US' : 'pt-BR']
   return (
-    <footer className="mt-24 bg-gray-50 sm:mt-12">
+    <footer className="mt-24 bg-white sm:mt-12">
       <div className="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"

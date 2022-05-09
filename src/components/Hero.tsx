@@ -45,23 +45,14 @@ const Hero = () => {
               <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
                 {hero.description1}{' '}
                 <a
-                  href="https://techmindit.com.br/site/"
+                  href="https://rumosolucoes.com/"
                   target="_blank"
                   className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5"
                   rel="noreferrer"
                 >
-                  Techmind
+                  Rumo Soluções
                 </a>{' '}
-                {hero.description2}{' '}
-                <a
-                  href="https://lecode.dev/"
-                  target="_blank"
-                  className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5 "
-                  rel="noreferrer"
-                >
-                  LeCode
-                </a>{' '}
-                {hero.description3}
+                {hero.description2}
               </p>
               <div className="mt-10 sm:mt-12">
                 <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
