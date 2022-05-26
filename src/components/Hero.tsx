@@ -7,6 +7,7 @@ import {
   AiOutlineInstagram
 } from 'react-icons/ai'
 import { SiUpwork } from 'react-icons/si'
+import { ImProfile } from 'react-icons/im'
 import { LOCALE } from '../../locale'
 
 const Hero = () => {
@@ -64,7 +65,7 @@ const Hero = () => {
                       >
                         {hero.contact}
                       </a>
-                      <div className="flex items-center gap-6 ml-auto md:mx-auto lg:mx-auto">
+                      <div className="flex items-center gap-5 ml-auto md:mx-auto lg:mx-auto">
                         <a
                           href="https://www.upwork.com/o/profiles/users/~01b27157790dd28700/"
                           target="_blank"
@@ -96,6 +97,14 @@ const Hero = () => {
                           rel="noreferrer"
                         >
                           <AiOutlineInstagram className="h-6 w-6" />
+                        </a>
+                        <a
+                          href="/documents/resume.pdf"
+                          target="_blank"
+                          className="text-gray-300 hover:text-gray-100"
+                          rel="noreferrer"
+                        >
+                          <ImProfile className="h-6 w-6" />
                         </a>
                       </div>
                     </div>

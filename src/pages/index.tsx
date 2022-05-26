@@ -11,6 +11,7 @@ import {
   AiOutlineInstagram
 } from 'react-icons/ai'
 import { SiUpwork } from 'react-icons/si'
+import { ImProfile } from 'react-icons/im'
 import Navbar, { NavigationProps } from 'components/Navbar'
 import Hero from 'components/Hero'
 import Work from 'components/Work'
@@ -59,6 +60,11 @@ const Landing: NextPage = () => {
         name: 'Instagram',
         href: 'https://www.instagram.com/lucasfilipess/',
         icon: AiOutlineInstagram
+      },
+      {
+        name: 'Resume',
+        href: '/documents/resume.pdf',
+        icon: ImProfile
       }
     ]
   }
