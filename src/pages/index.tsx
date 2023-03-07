@@ -73,14 +73,14 @@ const Landing: NextPage = () => {
       <NextSeo
         title="Lucas Filipe"
         description={landing.seoDescription}
-        canonical="http://lucasfilipess.tech"
+        canonical="http://lucasfilipess.vercel.app"
         openGraph={{
-          url: 'https://lucasfilipess.tech',
+          url: 'https://lucasfilipess.vercel.app',
           title: 'Lucas Filipe',
           description: landing.seoDescription,
           images: [
             {
-              url: 'https://lucasfilipess.tech/img/cover.jpeg',
+              url: 'https://lucasfilipess.vercel.app/img/cover.jpeg',
               width: 1280,
               height: 720,
               alt: 'Lucas Filipe'
