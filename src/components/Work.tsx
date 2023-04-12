@@ -69,7 +69,8 @@ const Work = ({ portfolio }: Props) => {
                       <blockquote>
                         <div>
                           <p className="text-base text-gray-500">
-                            &ldquo;{client.comment}&rdquo;
+                            {client.comment !== '' &&
+                              `&ldquo;${client.comment}&rdquo;`}
                           </p>
                         </div>
                         <footer className="mt-3">

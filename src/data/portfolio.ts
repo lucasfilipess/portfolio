@@ -1,4 +1,4 @@
-import { GiBrain, GiHealthNormal } from 'react-icons/gi'
+import { GiBrain, GiHealthNormal, GiHouseKeys } from 'react-icons/gi'
 import { useRouter } from 'next/router'
 import { LOCALE } from '../../locale'
 import { PortfolioProps } from 'components/Work'
@@ -27,6 +27,17 @@ export const PORTFOLIO = (): PortfolioProps[] => {
       client: {
         name: portfolio[1].client.name,
         comment: portfolio[1].client.comment
+      }
+    },
+    {
+      coverImage: '/img/im-broker.png',
+      icon: GiHouseKeys,
+      title: portfolio[2].title,
+      description: portfolio[2].description,
+      href: 'https://imbroker.tec.br/',
+      client: {
+        name: portfolio[2].client.name,
+        comment: portfolio[2].client.comment
       }
     }
   ]

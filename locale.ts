@@ -42,6 +42,15 @@ export const LOCALE = {
           name: 'Flávio Henrique Ferreira',
           comment: 'They have a good knowledge and worked very well.'
         }
+      },
+      {
+        title: 'Im Broker',
+        description:
+          'I’MBROKER was developed to provide a fast and secure connection between clients, brokers and real estate agencies in the new competitive world real estate market. Developed in the USA, the platform quickly became the biggest hub in the real estate market and today already has hundreds of partners that work in this segment, and already benefit from this technological innovation in carrying out their business with agility and connected security, all ready to carry out',
+        client: {
+          name: 'World Realtor LLC',
+          comment: ''
+        }
       }
     ],
     skills: [
@@ -181,6 +190,15 @@ export const LOCALE = {
         client: {
           name: 'Flávio Henrique Ferreira',
           comment: 'Ele têm um bom conhecimento e trabalha muito bem.'
+        }
+      },
+      {
+        title: 'Im Broker',
+        description:
+          'O I’MBROKER foi desenvolvido para proporcionar uma conexão rápida e segura entre clientes, corretores e imobiliárias no novo cenário competitivo mercado imobiliário mundial. Desenvolvido nos EUA, a plataforma se tornou o maior hub do mercado imobiliário rapidamente e hoje já conta com centenas de parceiros que atuam nesse seguimento, e já se beneficiarem dessa inovação tecnológica na realização dos seus negócios com agilidade e segurança conectados, todos prontos para realizar',
+        client: {
+          name: 'World Realtor LLC',
+          comment: ''
         }
       }
     ],
