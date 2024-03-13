@@ -144,7 +144,7 @@ const Work = ({ portfolio }: Props) => {
                         <blockquote>
                           <div>
                             <p className="text-base text-gray-500">
-                              &ldquo;{client.comment}&rdquo;
+                              {`&ldquo;${client.comment}&rdquo;`}
                             </p>
                           </div>
                           <footer className="mt-3">

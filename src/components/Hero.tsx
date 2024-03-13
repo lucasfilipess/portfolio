@@ -46,12 +46,12 @@ const Hero = () => {
               <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
                 {hero.description1}{' '}
                 <a
-                  href="https://rumosolucoes.com/"
+                  href="https://nubank.com.br"
                   target="_blank"
                   className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5"
                   rel="noreferrer"
                 >
-                  Rumo Soluções
+                  Nubank
                 </a>{' '}
                 {hero.description2}
               </p>

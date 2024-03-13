@@ -1,4 +1,5 @@
 import { GiBrain, GiHealthNormal, GiHouseKeys } from 'react-icons/gi'
+import { IoMdCode } from "react-icons/io";
 import { useRouter } from 'next/router'
 import { LOCALE } from '../../locale'
 import { PortfolioProps } from 'components/Work'
@@ -38,6 +39,17 @@ export const PORTFOLIO = (): PortfolioProps[] => {
       client: {
         name: portfolio[2].client.name,
         comment: portfolio[2].client.comment
+      }
+    },
+    {
+      coverImage: '/img/open-plc.png',
+      icon: IoMdCode,
+      title: portfolio[3].title,
+      description: portfolio[3].description,
+      href: 'https://autonomylogic.com/',
+      client: {
+        name: portfolio[3].client.name,
+        comment: portfolio[3].client.comment
       }
     }
   ]

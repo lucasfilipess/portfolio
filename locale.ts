@@ -10,7 +10,7 @@ export const LOCALE = {
       github: 'Visit my public repositories',
       office: 'Full Stack Developer',
       description1: 'I currently work at',
-      description2: 'building mobile and web applications with JavaScript.',
+      description2: 'building solutions for search and personalization on marketplace.',
       contact: 'Contact me'
     },
     landing: {
@@ -51,7 +51,16 @@ export const LOCALE = {
           name: 'World Realtor LLC',
           comment: ''
         }
-      }
+      },
+      {
+        title: 'OpenPLC Editor',
+        description:
+          'The OpenPLC Editor is a IEC 61131-3 compliant PLC editor totally free and open source. You can use it to upload PLC code directly to any board or system running OpenPLC Runtime',
+        client: {
+          name: 'Thiago Alves',
+          comment: ''
+        }
+      },
     ],
     skills: [
       {
@@ -158,7 +167,7 @@ export const LOCALE = {
       github: 'Visite meus repositórios públicos',
       office: 'Programador Full Stack',
       description1: 'Atualmente trabalho na',
-      description2: 'desenvolvendo aplicações mobile e web com JavaScript.',
+      description2: 'desenvolvendo soluções para busca e personalização no marketplace.',
       contact: 'Fale comigo'
     },
     landing: {
@@ -200,7 +209,16 @@ export const LOCALE = {
           name: 'World Realtor LLC',
           comment: ''
         }
-      }
+      },
+      {
+        title: 'OpenPLC Editor',
+        description:
+          'O OpenPLC Editor é um editor PLC compatível com IEC 61131-3, totalmente gratuito e de código aberto. Você pode usá-lo para fazer upload do código PLC diretamente para qualquer placa ou sistema executando OpenPLC Runtime',
+        client: {
+          name: 'Thiago Alves',
+          comment: ''
+        }
+      },
     ],
     skills: [
       {
