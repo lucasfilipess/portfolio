@@ -18,7 +18,7 @@ const About = () => {
             <div className="flex justify-center h-auto aspect-w-10 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
               <Image
                 className="object-cover"
-                src="/img/lucas.jpeg"
+                src="/img/lucas.jpg"
                 alt="Lucas Filipe"
                 width={384}
                 height={512}
